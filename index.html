@@ -76,10 +76,40 @@
       text-shadow: 0 0 8px #ff9900;
     }
 
-    .skills, .projects {
+    .hero-layout {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .hero-text {
+      flex: 1 1 500px;
+    }
+
+    .hero-image {
+      flex: 1 1 300px;
+      text-align: center;
+    }
+
+    .hero-image img {
+      width: 100%;
+      max-width: 350px;
+      border-radius: 12px;
+      box-shadow: 0 0 25px #ff9900;
+      transition: transform 0.3s ease;
+    }
+
+    .hero-image img:hover {
+      transform: scale(1.05);
+    }
+
+    .skills {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 25px;
+      margin-top: 20px;
     }
 
     .card {
@@ -113,25 +143,13 @@
       margin: 0;
       color: #444;
     }
-
-    .deku-bottom {
-      text-align: center;
-      margin-top: 40px;
-    }
-
-    .deku-bottom img {
-      width: 180px;
-      border-radius: 12px;
-      box-shadow: 0 0 20px #ff9900;
-    }
   </style>
 </head>
 <body>
   <header>
     <h1>My Hero Developer Portfolio</h1>
     <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
+      <a href="#hero-profile">About</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -140,36 +158,42 @@
     </div>
   </header>
 
-  <section id="about">
-    <h2>👤 About Me</h2>
-    <p>
-      I’m a developer with 5+ years of experience in programming and game development.
-      My focus is Minecraft server development, plugins, and creative customization.
-      I also work with multiple programming languages and tools to build unique experiences.
-    </p>
-  </section>
+  <section id="hero-profile">
+    <div class="hero-layout">
+      <div class="hero-text">
+        <h2>👤 About Me</h2>
+        <p>
+          I’m a developer with 5+ years of experience in programming and game development.
+          My focus is Minecraft server development, plugins, and creative customization.
+          I also work with multiple programming languages and tools to build unique experiences.
+        </p>
 
-  <section id="skills">
-    <h2>🧩 Skills</h2>
-    <div class="skills">
-      <div class="card">
-        <h3>Programming Languages</h3>
-        <p>Python, Java, JavaScript, HTML, CSS, C++, Rust, Lua, and more.</p>
+        <h2>🧩 Skills</h2>
+        <div class="skills">
+          <div class="card">
+            <h3>Programming Languages</h3>
+            <p>Python, Java, JavaScript, HTML, CSS, C++, Rust, Lua, and more.</p>
+          </div>
+          <div class="card">
+            <h3>Game Development</h3>
+            <p>Minecraft plugins & mods, Roblox scripting, server branding.</p>
+          </div>
+          <div class="card">
+            <h3>Tools</h3>
+            <p>Visual Studio Code, GitHub, Tebex storefronts, server hosting platforms.</p>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <h3>Game Development</h3>
-        <p>Minecraft plugins & mods, Roblox scripting, server branding.</p>
-      </div>
-      <div class="card">
-        <h3>Tools</h3>
-        <p>Visual Studio Code, GitHub, Tebex storefronts, server hosting platforms.</p>
+
+      <div class="hero-image">
+        <img src="dekuuu.png" alt="Deku powering up" />
       </div>
     </div>
   </section>
 
   <section id="projects">
     <h2>🚀 Projects</h2>
-    <div class="projects">
+    <div class="skills">
       <div class="card"><h3>Yabia SMP / YabiaMC</h3><p>Custom Minecraft SMP server with unique branding, Tebex storefront integration, and creative logos.</p></div>
       <div class="card"><h3>Roblox Chat Customization</h3><p>Implemented custom developer tags in Roblox chat scripts using Lua.</p></div>
       <div class="card"><h3>Custom Plugins & Scripts</h3><p>Built Minecraft plugins and automated server tasks with Python and Java tools.</p></div>
@@ -190,10 +214,6 @@
     <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
     <p>Discord: YourDiscordTag#0000</p>
   </section>
-
-  <div class="deku-bottom">
-    <img src="dekuuu.png" alt="Deku" />
-  </div>
 
   <footer>
     <p>© 2025 My Hero Developer Portfolio | Built with 💛 and VS Code</p>

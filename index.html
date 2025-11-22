@@ -3,35 +3,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Developer Portfolio</title>
+  <title>My Hero Developer Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
+      font-family: 'Segoe UI', sans-serif;
       background: linear-gradient(135deg, #0a0f1f, #1a2a4f);
       color: #e0e6f8;
     }
+
     header {
-      background: rgba(20, 30, 60, 0.9);
+      background: #081830;
       padding: 30px;
       text-align: center;
-      box-shadow: 0 0 20px #3a6cf4;
+      box-shadow: 0 0 20px #00ffcc;
+      position: relative;
     }
+
     header h1 {
-      margin: 0;
-      font-size: 3em;
       font-family: 'Rampart One', cursive;
-      color: #ff7f00;
-      text-shadow: -2px -2px 0 #001f4d, 2px 2px 0 #001f4d;
-      background-color: #fff04d;
-      padding: 20px;
-      border-radius: 12px;
-      display: inline-block;
+      font-size: 3em;
+      color: #00ffcc;
+      text-shadow: 2px 2px 0 #003344;
+      margin-bottom: 10px;
     }
+
+    .deku-image {
+      width: 120px;
+      height: auto;
+      border-radius: 50%;
+      box-shadow: 0 0 15px #00ffcc;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
     nav {
       margin-top: 15px;
     }
+
     nav a {
       color: #e0e6f8;
       margin: 0 15px;
@@ -39,65 +50,76 @@
       font-weight: bold;
       transition: color 0.3s ease;
     }
+
     nav a:hover {
-      color: #6fa8ff;
+      color: #00ffcc;
     }
+
     .anime-banner {
       margin-top: 20px;
       padding: 15px;
-      background: linear-gradient(90deg, #3a6cf4, #6fa8ff, #3a6cf4);
-      color: #fff;
+      background: linear-gradient(90deg, #00ffcc, #0099ff, #00ffcc);
+      color: #001f2f;
       font-size: 1.2em;
       font-weight: bold;
       text-align: center;
       border-radius: 10px;
       animation: pulseGlow 3s infinite;
-      box-shadow: 0 0 15px #6fa8ff;
+      box-shadow: 0 0 15px #00ffcc;
     }
+
     @keyframes pulseGlow {
-      0% { box-shadow: 0 0 10px #6fa8ff; }
-      50% { box-shadow: 0 0 25px #6fa8ff; }
-      100% { box-shadow: 0 0 10px #6fa8ff; }
+      0% { box-shadow: 0 0 10px #00ffcc; }
+      50% { box-shadow: 0 0 25px #00ffcc; }
+      100% { box-shadow: 0 0 10px #00ffcc; }
     }
+
     section {
       padding: 50px;
       max-width: 1100px;
       margin: auto;
     }
+
     h2 {
-      color: #6fa8ff;
-      border-bottom: 2px solid #3a6cf4;
+      color: #00ffcc;
+      border-bottom: 2px solid #0099ff;
       padding-bottom: 5px;
-      text-shadow: 0 0 8px #3a6cf4;
+      text-shadow: 0 0 8px #0099ff;
     }
+
     .skills, .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 25px;
     }
+
     .card {
-      background: rgba(25, 35, 70, 0.85);
+      background: rgba(10, 20, 40, 0.85);
       padding: 25px;
       border-radius: 12px;
-      box-shadow: 0 0 15px rgba(58, 108, 244, 0.6);
+      box-shadow: 0 0 15px rgba(0, 255, 204, 0.6);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
     .card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 0 25px #6fa8ff;
-      border: 2px solid #6fa8ff;
+      box-shadow: 0 0 25px #00ffcc;
+      border: 2px solid #00ffcc;
     }
+
     footer {
-      background: rgba(20, 30, 60, 0.9);
+      background: #081830;
       text-align: center;
       padding: 25px;
       margin-top: 40px;
-      box-shadow: 0 0 15px #3a6cf4;
+      box-shadow: 0 0 15px #00ffcc;
     }
+
     footer a {
-      color: #6fa8ff;
+      color: #00ffcc;
       text-decoration: none;
     }
+
     footer p {
       margin: 0;
       color: #aab8e6;
@@ -106,7 +128,8 @@
 </head>
 <body>
   <header>
-    <h1>My Developer Portfolio</h1>
+    <img src="dekuuu.png" alt="Deku" class="deku-image" />
+    <h1>My Hero Developer Portfolio</h1>
     <nav>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
@@ -114,7 +137,7 @@
       <a href="#contact">Contact</a>
     </nav>
     <div class="anime-banner">
-      ✨ Welcome to my world of Minecraft development ✨
+      💥 Plus Ultra Coding Energy 💥
     </div>
   </header>
 
@@ -148,50 +171,17 @@
   <section id="projects">
     <h2>🚀 Projects</h2>
     <div class="projects">
-      <div class="card">
-        <h3>Yabia SMP / YabiaMC</h3>
-        <p>Custom Minecraft SMP server with unique branding, Tebex storefront integration, and creative logos.</p>
-      </div>
-      <div class="card">
-        <h3>Roblox Chat Customization</h3>
-        <p>Implemented custom developer tags in Roblox chat scripts using Lua.</p>
-      </div>
-      <div class="card">
-        <h3>Custom Plugins & Scripts</h3>
-        <p>Built Minecraft plugins and automated server tasks with Python and Java tools.</p>
-      </div>
-      <div class="card">
-        <h3>Elemental Realms</h3>
-        <p>A plugin introducing elemental powers (fire, water, earth, air) with custom abilities.</p>
-      </div>
-      <div class="card">
-        <h3>RuneCrafting</h3>
-        <p>Players discover ancient runes to unlock buffs, spells, and hidden lore.</p>
-      </div>
-      <div class="card">
-        <h3>Dragon Tamer</h3>
-        <p>Adds tamable dragons with leveling, armor, and special attacks.</p>
-      </div>
-      <div class="card">
-        <h3>Battle Royale Mode</h3>
-        <p>A Minecraft minigame with shrinking zones, loot drops, and last‑man‑standing mechanics.</p>
-      </div>
-      <div class="card">
-        <h3>Survival Seasons</h3>
-        <p>Dynamic weather and seasonal changes affecting crops, mobs, and player health.</p>
-      </div>
-      <div class="card">
-        <h3>Redstone Visualizer</h3>
-        <p>Shows redstone circuits in 3D holograms for easier debugging.</p>
-      </div>
-      <div class="card">
-        <h3>SkinForge</h3>
-        <p>In‑game skin editor with layers, palettes, and export options.</p>
-      </div>
-      <div class="card">
-        <h3>MusicCraft</h3>
-        <p>Adds playable instruments and custom soundtracks to Minecraft worlds.</p>
-      </div>
+      <div class="card"><h3>Yabia SMP / YabiaMC</h3><p>Custom Minecraft SMP server with unique branding, Tebex storefront integration, and creative logos.</p></div>
+      <div class="card"><h3>Roblox Chat Customization</h3><p>Implemented custom developer tags in Roblox chat scripts using Lua.</p></div>
+      <div class="card"><h3>Custom Plugins & Scripts</h3><p>Built Minecraft plugins and automated server tasks with Python and Java tools.</p></div>
+      <div class="card"><h3>Elemental Realms</h3><p>A plugin introducing elemental powers (fire, water, earth, air) with custom abilities.</p></div>
+      <div class="card"><h3>RuneCrafting</h3><p>Players discover ancient runes to unlock buffs, spells, and hidden lore.</p></div>
+      <div class="card"><h3>Dragon Tamer</h3><p>Adds tamable dragons with leveling, armor, and special attacks.</p></div>
+      <div class="card"><h3>Battle Royale Mode</h3><p>A Minecraft minigame with shrinking zones, loot drops, and last‑man‑standing mechanics.</p></div>
+      <div class="card"><h3>Survival Seasons</h3><p>Dynamic weather and seasonal changes affecting crops, mobs, and player health.</p></div>
+      <div class="card"><h3>Redstone Visualizer</h3><p>Shows redstone circuits in 3D holograms for easier debugging.</p></div>
+      <div class="card"><h3>SkinForge</h3><p>In‑game skin editor with layers, palettes, and export options.</p></div>
+      <div class="card"><h3>MusicCraft</h3><p>Adds playable instruments and custom soundtracks to Minecraft worlds.</p></div>
     </div>
   </section>
 
@@ -203,7 +193,7 @@
   </section>
 
   <footer>
-    <p>© 2025 My Developer Portfolio | Built with 💙 and VS Code</p>
+    <p>© 2025 My Hero Developer Portfolio | Built with 💥 and VS Code</p>
   </footer>
 </body>
 </html>

@@ -9,34 +9,23 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #0a0f1f, #1a2a4f);
-      color: #e0e6f8;
+      background: linear-gradient(135deg, #fff04d, #ffd700);
+      color: #222;
     }
 
     header {
-      background: #081830;
+      background: #fff04d;
       padding: 30px;
       text-align: center;
-      box-shadow: 0 0 20px #00ffcc;
-      position: relative;
+      box-shadow: 0 0 20px #ff9900;
     }
 
     header h1 {
       font-family: 'Rampart One', cursive;
       font-size: 3em;
-      color: #00ffcc;
-      text-shadow: 2px 2px 0 #003344;
+      color: #ff7f00;
+      text-shadow: 2px 2px 0 #cc6600;
       margin-bottom: 10px;
-    }
-
-    .deku-image {
-      width: 120px;
-      height: auto;
-      border-radius: 50%;
-      box-shadow: 0 0 15px #00ffcc;
-      position: absolute;
-      top: 20px;
-      left: 20px;
     }
 
     nav {
@@ -44,7 +33,7 @@
     }
 
     nav a {
-      color: #e0e6f8;
+      color: #222;
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
@@ -52,26 +41,26 @@
     }
 
     nav a:hover {
-      color: #00ffcc;
+      color: #ff7f00;
     }
 
     .anime-banner {
       margin-top: 20px;
       padding: 15px;
-      background: linear-gradient(90deg, #00ffcc, #0099ff, #00ffcc);
-      color: #001f2f;
+      background: linear-gradient(90deg, #ffcc00, #ff9900, #ffcc00);
+      color: #222;
       font-size: 1.2em;
       font-weight: bold;
       text-align: center;
       border-radius: 10px;
       animation: pulseGlow 3s infinite;
-      box-shadow: 0 0 15px #00ffcc;
+      box-shadow: 0 0 15px #ff9900;
     }
 
     @keyframes pulseGlow {
-      0% { box-shadow: 0 0 10px #00ffcc; }
-      50% { box-shadow: 0 0 25px #00ffcc; }
-      100% { box-shadow: 0 0 10px #00ffcc; }
+      0% { box-shadow: 0 0 10px #ff9900; }
+      50% { box-shadow: 0 0 25px #ff9900; }
+      100% { box-shadow: 0 0 10px #ff9900; }
     }
 
     section {
@@ -81,10 +70,10 @@
     }
 
     h2 {
-      color: #00ffcc;
-      border-bottom: 2px solid #0099ff;
+      color: #ff7f00;
+      border-bottom: 2px solid #ff9900;
       padding-bottom: 5px;
-      text-shadow: 0 0 8px #0099ff;
+      text-shadow: 0 0 8px #ff9900;
     }
 
     .skills, .projects {
@@ -94,41 +83,51 @@
     }
 
     .card {
-      background: rgba(10, 20, 40, 0.85);
+      background: rgba(255, 255, 200, 0.85);
       padding: 25px;
       border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0, 255, 204, 0.6);
+      box-shadow: 0 0 15px rgba(255, 153, 0, 0.6);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 0 25px #00ffcc;
-      border: 2px solid #00ffcc;
+      box-shadow: 0 0 25px #ff9900;
+      border: 2px solid #ff9900;
     }
 
     footer {
-      background: #081830;
+      background: #fff04d;
       text-align: center;
       padding: 25px;
       margin-top: 40px;
-      box-shadow: 0 0 15px #00ffcc;
+      box-shadow: 0 0 15px #ff9900;
     }
 
     footer a {
-      color: #00ffcc;
+      color: #ff7f00;
       text-decoration: none;
     }
 
     footer p {
       margin: 0;
-      color: #aab8e6;
+      color: #444;
+    }
+
+    .deku-bottom {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .deku-bottom img {
+      width: 180px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #ff9900;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="dekuuu.png" alt="Deku" class="deku-image" />
     <h1>My Hero Developer Portfolio</h1>
     <nav>
       <a href="#about">About</a>
@@ -192,8 +191,12 @@
     <p>Discord: YourDiscordTag#0000</p>
   </section>
 
+  <div class="deku-bottom">
+    <img src="dekuuu.png" alt="Deku" />
+  </div>
+
   <footer>
-    <p>© 2025 My Hero Developer Portfolio | Built with 💥 and VS Code</p>
+    <p>© 2025 My Hero Developer Portfolio | Built with 💛 and VS Code</p>
   </footer>
 </body>
 </html>

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Developer Portfolio - Minecraft & Programming</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
   <style>
-    /* Anime-inspired blue theme */
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
@@ -20,10 +20,14 @@
     }
     header h1 {
       margin: 0;
-      font-size: 2.8em;
-      color: #3a6cf4;
-      text-shadow: 0 0 10px #6fa8ff;
-      font-weight: bold;
+      font-size: 3em;
+      font-family: 'Rampart One', cursive;
+      color: #ff7f00;
+      text-shadow: -2px -2px 0 #001f4d, 2px 2px 0 #001f4d;
+      background-color: #fff04d;
+      padding: 20px;
+      border-radius: 12px;
+      display: inline-block;
     }
     nav {
       margin-top: 15px;
@@ -37,6 +41,23 @@
     }
     nav a:hover {
       color: #6fa8ff;
+    }
+    .anime-banner {
+      margin-top: 20px;
+      padding: 15px;
+      background: linear-gradient(90deg, #3a6cf4, #6fa8ff, #3a6cf4);
+      color: #fff;
+      font-size: 1.2em;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 10px;
+      animation: pulseGlow 3s infinite;
+      box-shadow: 0 0 15px #6fa8ff;
+    }
+    @keyframes pulseGlow {
+      0% { box-shadow: 0 0 10px #6fa8ff; }
+      50% { box-shadow: 0 0 25px #6fa8ff; }
+      100% { box-shadow: 0 0 10px #6fa8ff; }
     }
     section {
       padding: 50px;
@@ -63,7 +84,8 @@
     }
     .card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 0 25px rgba(111, 168, 255, 0.9);
+      box-shadow: 0 0 25px #6fa8ff;
+      border: 2px solid #6fa8ff;
     }
     footer {
       background: rgba(20, 30, 60, 0.9);
@@ -91,6 +113,9 @@
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
+    <div class="anime-banner">
+      ✨ Welcome to my world of Minecraft development ✨
+    </div>
   </header>
 
   <section id="about">

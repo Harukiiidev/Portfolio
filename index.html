@@ -1,200 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Darkstone - Minecraft portfolio template</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Minecraft Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0f12;
+      color: #fff;
+    }
+    header {
+      padding: 20px;
+      text-align: center;
+    }
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      max-width: 700px;
+      margin: 0 auto 30px;
+      color: #ccc;
+    }
+    .hero .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      background: #19c37d;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+    }
+    .services {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+    .service {
+      background: #12171c;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 300px;
+    }
+    .service h3 {
+      margin-top: 0;
+      color: #19c37d;
+    }
+    .service p {
+      color: #ccc;
+    }
+    .service a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 14px;
+      background: #133226;
+      color: #19c37d;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+    .marquee {
+      background: #19c37d;
+      color: #000;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .marquee span {
+      display: inline-block;
+      padding: 15px;
+      font-weight: bold;
+      animation: scroll 20s linear infinite;
+    }
+    @keyframes scroll {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+    .about {
+      padding: 40px 20px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .about img {
+      width: 60px;
+      height: 60px;
+    }
+    .testimonials {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .faq {
+      padding: 40px 20px;
+    }
+    .faq h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .faq-card {
+      background: #12171c;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    footer {
+      background: #0a0e10;
+      padding: 40px 20px;
+      color: #ccc;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .footer-grid h4 {
+      margin-top: 0;
+      color: #19c37d;
+    }
+    .footer-grid a {
+      color: #ccc;
+      text-decoration: none;
+    }
+    .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      border-top: 1px solid #222;
+      padding-top: 10px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner" role="navigation" aria-label="Primary">
-      <a class="brand" href="#">
-        <span class="brand-icon" aria-hidden="true">⛏</span>
-        <span class="brand-name">Villager</span>
-      </a>
-      <nav class="nav">
-        <a href="#" class="nav-link">Home</a>
-        <a href="#" class="nav-link">Products</a>
-        <a href="#" class="nav-link">Projects</a>
-        <a href="#" class="nav-link">Reviews</a>
-      </nav>
-    </div>
+  <header>
+    <h2>Villager</h2>
   </header>
 
-  <main>
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container hero-inner">
-        <h1 class="hero-title">Create the ultimate Minecraft world with just a few clicks</h1>
-        <p class="hero-subtitle">
-          Welcome to my personal portfolio, where I showcase my finest creations.
-          As a passionate developer, I bring together creativity and innovation
-          to craft unique and engaging projects.
-        </p>
-        <div class="hero-ctas">
-          <a class="btn btn-primary" href="#" aria-label="View Portfolio">View Portfolio</a>
-          <a class="btn btn-outline" href="#" aria-label="Get in Touch">Get in Touch</a>
-        </div>
-      </div>
-    </section>
+  <section class="hero">
+    <h1>Create the Ultimate Minecraft World with Just a Few Clicks</h1>
+    <p>Welcome to my personal portfolio, where I showcase my finest creations. As a passionate developer, I bring together creativity and innovation to craft unique and engaging projects.</p>
+    <div class="buttons">
+      <a href="#">View Portfolio</a>
+      <a href="#">Get in Touch</a>
+    </div>
+  </section>
 
-    <!-- Services -->
-    <section class="services">
-      <div class="container">
-        <div class="cards">
-          <article class="card">
-            <h3 class="card-title">Minecraft Maps</h3>
-            <p class="card-desc">
-              We create immersive, high-quality Minecraft maps for adventure, minigames, and more.
-            </p>
-            <a href="#" class="btn btn-secondary" aria-label="View work for Minecraft Maps">View Work</a>
-          </article>
-          <article class="card">
-            <h3 class="card-title">Minecraft Setups</h3>
-            <p class="card-desc">
-              Discover a variety of complete plugin setups, including lobbies, crates, and gamemodes, that are easy to install.
-            </p>
-            <a href="#" class="btn btn-secondary" aria-label="View work for Minecraft Setups">View Work</a>
-          </article>
-          <article class="card">
-            <h3 class="card-title">Minecraft Plugins</h3>
-            <p class="card-desc">
-              We offer custom Minecraft plugins to enhance gameplay, offering unique features for any Minecraft server.
-            </p>
-            <a href="#" class="btn btn-secondary" aria-label="View work for Minecraft Plugins">View Work</a>
-          </article>
-        </div>
-      </div>
-    </section>
+  <section class="services">
+    <div class="service">
+      <h3>Minecraft Maps</h3>
+      <p>We create immersive, high-quality Minecraft maps for adventure, minigames, and more.</p>
+      <a href="#">View Work</a>
+    </div>
+    <div class="service">
+      <h3>Minecraft Setups</h3>
+      <p>Discover a variety of complete plugin setups, including lobbies, crates, and gamemodes, that are easy to install.</p>
+      <a href="#">View Work</a>
+    </div>
+    <div class="service">
+      <h3>Minecraft Plugins</h3>
+      <p>We offer custom Minecraft plugins to enhance gameplay, offering unique features for any Minecraft server.</p>
+      <a href="#">View Work</a>
+    </div>
+  </section>
 
-    <!-- Moving marquee banner -->
-    <section class="marquee" aria-label="Scrolling service banner">
-      <div class="marquee-track">
-        <span class="marquee-item">CUSTOM MINECRAFT PLUGINS</span>
-        <span class="marquee-sep">—</span>
-        <span class="marquee-item">CUSTOM MINECRAFT SETUPS</span>
-        <span class="marquee-sep">—</span>
-        <span class="marquee-item">CUSTOM MINECRAFT BUILDS</span>
-        <span class="marquee-sep">—</span>
-        <span class="marquee-item">CUSTOM MINECRAFT CONFIGS</span>
-        <span class="marquee-sep">—</span>
+  <section class="marquee">
+    <span>CUSTOM MINECRAFT PLUGINS — CUSTOM MINECRAFT SETUPS — CUSTOM MINECRAFT BUILDS — CUSTOM MINECRAFT CONFIGS — </span>
+  </section>
 
-        <!-- duplicate for seamless loop -->
-        <span class="marquee-item">CUSTOM MINECRAFT PLUGINS</span>
-        <span class="marquee-sep">—</span>
-        <span class="marquee-item">CUSTOM MINECRAFT SETUPS</span>
-        <span class="marquee-sep">—</span>
-        <span class="marquee-item">CUSTOM MINECRAFT BUILDS</span>
-        <span class="marquee-sep">—</span>
-        <span class="marquee-item">CUSTOM MINECRAFT CONFIGS</span>
-        <span class="marquee-sep">—</span>
-      </div>
-    </section>
+  <section class="about">
+    <img src="villager.png" alt="Villager Icon"/>
+    <div>
+      <h2>Some more about me.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat tellus magna, quis vestibulum mi pellentesque eu. Duis malesuada bibendum mi id tempor leo.</p>
+    </div>
+  </section>
 
-    <!-- About -->
-    <section class="about">
-      <div class="container about-inner">
-        <div class="about-icon" aria-hidden="true">
-          <img src="assets/villager.png" alt="" />
-        </div>
-        <div class="about-content">
-          <h2 class="section-title">Some more about me.</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat
-            tellus magna, quis vestibulum mi pellentesque eu. Duis malesuada bibendum
-            mi id tempor leo.
-          </p>
-        </div>
-      </div>
-    </section>
+  <section class="testimonials">
+    <h2>What people say</h2>
+    <!-- intentionally empty -->
+  </section>
 
-    <!-- Testimonials heading only -->
-    <section class="testimonials">
-      <div class="container">
-        <h2 class="section-title">What people say</h2>
-        <!-- Intentionally empty per your note -->
-      </div>
-    </section>
+  <section class="faq">
+    <h2>Questions you may have</h2>
+    <div class="faq-grid">
+      <div class="faq-card">Lorem ipsum dolor amet, consectetur adipiscing elit.</div>
+      <div class="faq-card">Sed do eiusmod tempor incididunt ut labore.</div>
+      <div class="faq-card">Ut enim ad minim veniam quis nostrud.</div>
+      <div class="faq-card">Duis aute irure dolor in reprehenderit.</div>
+      <div class="faq-card">Excepteur sint occaecat cupidatat non proident.</div>
+      <div class="faq-card">Nisi ut aliquip ex ea commodo consequat.</div>
+    </div>
+  </section>
 
-    <!-- FAQ -->
-    <section class="faq">
-      <div class="container">
-        <h2 class="section-title">Questions you may have</h2>
-        <div class="faq-grid" role="list">
-          <div class="faq-card" role="listitem">
-            <h3 class="faq-title">Lorem ipsum dolor amet</h3>
-            <p class="faq-desc">Consectetur adipiscing elit.</p>
-          </div>
-          <div class="faq-card" role="listitem">
-            <h3 class="faq-title">Sed do eiusmod</h3>
-            <p class="faq-desc">Tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-          <div class="faq-card" role="listitem">
-            <h3 class="faq-title">Ut enim ad minim veniam</h3>
-            <p class="faq-desc">Quis nostrud exercitation ullamco.</p>
-          </div>
-          <div class="faq-card" role="listitem">
-            <h3 class="faq-title">Duis aute irure dolor</h3>
-            <p class="faq-desc">In reprehenderit in voluptate velit esse cillum.</p>
-          </div>
-          <div class="faq-card" role="listitem">
-            <h3 class="faq-title">Excepteur sint occaecat</h3>
-            <p class="faq-desc">Cupidatat non proident, sunt in culpa.</p>
-          </div>
-          <div class="faq-card" role="listitem">
-            <h3 class="faq-title">Nisi ut aliquip ex ea</h3>
-            <p class="faq-desc">Commodo consequat.</p>
-          </div>
-        </div>
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h4>Quick Links</h4>
+        <a href="#">Home</a><br/>
+        <a href="#">Products</a><br/>
+        <a href="#">Projects</a><br/>
+        <a href="#">Reviews</a>
       </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-col">
-        <h4 class="footer-title">Quick Links</h4>
-        <ul class="footer-list">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Reviews</a></li>
-        </ul>
+      <div>
+        <h4>Extra</h4>
+        <a href="#">Terms</a><br/>
+        <a href="#">About Us</a><br/>
+        <a href="#">FAQ</a><br/>
+        <a href="#">Contact</a>
       </div>
-      <div class="footer-col">
-        <h4 class="footer-title">Extra</h4>
-        <ul class="footer-list">
-          <li><a href="#">Terms</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+      <div>
+        <h4>Community</h4>
+        <a href="#">Instagram</a><br/>
+        <a href="#">Twitter</a><br/>
+        <a href="#">Discord</a><br/>
+        <a href="#">Reddit</a>
       </div>
-      <div class="footer-col">
-        <h4 class="footer-title">Community</h4>
-        <ul class="footer-list">
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Discord</a></li>
-          <li><a href="#">Reddit</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4 class="footer-title">Villager</h4>
-        <p class="footer-desc">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...
-        </p>
+      <div>
+        <h4>Villager</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...</p>
       </div>
     </div>
-    <div class="container footer-bottom">
-      <p>©2024 Copyright — Villager — All rights reserved</p>
+    <div class="footer-bottom">
+      ©2024 Copyright - Villager - All rights reserved
     </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>

@@ -1,177 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Haruki Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #ffffff, #000000);
-      color: #000;
-    }
-
-    header {
-      background: #000;
-      padding: 30px;
-      text-align: center;
-      box-shadow: 0 0 20px #333;
-    }
-
-    header h1 {
-      font-family: 'Rampart One', cursive;
-      font-size: 3em;
-      color: #fff;
-      text-shadow: 2px 2px 0 #444;
-      margin-bottom: 10px;
-    }
-
-    nav {
-      margin-top: 15px;
-    }
-
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #ccc;
-    }
-
-    .anime-banner {
-      margin-top: 20px;
-      padding: 15px;
-      background: linear-gradient(90deg, #000, #444, #000);
-      color: #fff;
-      font-size: 1.2em;
-      font-weight: bold;
-      text-align: center;
-      border-radius: 10px;
-      animation: pulseGlow 3s infinite;
-      box-shadow: 0 0 15px #444;
-    }
-
-    @keyframes pulseGlow {
-      0% { box-shadow: 0 0 10px #444; }
-      50% { box-shadow: 0 0 25px #666; }
-      100% { box-shadow: 0 0 10px #444; }
-    }
-
-    section {
-      padding: 50px;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    h2 {
-      color: #000;
-      border-bottom: 2px solid #444;
-      padding-bottom: 5px;
-      text-shadow: 0 0 8px #999;
-    }
-
-    .skills {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
-      margin-top: 20px;
-    }
-
-    .card {
-      background: rgba(240, 240, 240, 0.95);
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 25px #000;
-      border: 2px solid #000;
-    }
-
-    footer {
-      background: #000;
-      text-align: center;
-      padding: 25px;
-      margin-top: 40px;
-      box-shadow: 0 0 15px #333;
-    }
-
-    footer a {
-      color: #fff;
-      text-decoration: none;
-    }
-
-    footer p {
-      margin: 0;
-      color: #ccc;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Darkstone - Minecraft portfolio template</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Hi, im Haruki</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <div class="anime-banner">
-      💥 Make me your dev TODAY 💥
+  <header class="site-header">
+    <div class="container header-inner" role="navigation" aria-label="Primary">
+      <a class="brand" href="#">
+        <span class="brand-icon" aria-hidden="true">⛏</span>
+        <span class="brand-name">Villager</span>
+      </a>
+      <nav class="nav">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">Products</a>
+        <a href="#" class="nav-link">Projects</a>
+        <a href="#" class="nav-link">Reviews</a>
+      </nav>
     </div>
   </header>
 
-  <section id="about">
-    <h2>👤 About Me</h2>
-    <p>
-      I am a software developer with over five years of experience in programming and game development, with a primary focus on Minecraft server engineering and advanced plugin development. My work centers on designing and implementing customized gameplay mechanics, performance-optimized systems, and innovative server features that elevate player engagement and deliver unique interactive experiences.
-    </p>
-    <p>
-      Throughout my career, I have developed a deep proficiency across multiple programming languages, frameworks, and development tools. This versatility enables me to architect scalable solutions, integrate complex systems, and adapt quickly to new technologies. I have extensive hands-on experience with both standalone and networked server environments, leveraging best practices in software design, version control, testing, and deployment.
-    </p>
-    <p>
-      Beyond technical implementation, I prioritize clean architecture, maintainable code, and thoughtful user experience design. I approach each project with a balance of creativity and engineering discipline—whether I’m building custom plugins, optimizing server performance, or developing new gameplay concepts from the ground up.
-    </p>
-    <p>
-      My goal is to create high-quality, robust, and imaginative systems that push the boundaries of what players expect while maintaining strong reliability and long-term maintainability.
-    </p>
-  </section>
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1 class="hero-title">Create the ultimate Minecraft world with just a few clicks</h1>
+        <p class="hero-subtitle">
+          Welcome to my personal portfolio, where I showcase my finest creations.
+          As a passionate developer, I bring together creativity and innovation
+          to craft unique and engaging projects.
+        </p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#" aria-label="View Portfolio">View Portfolio</a>
+          <a class="btn btn-outline" href="#" aria-label="Get in Touch">Get in Touch</a>
+        </div>
+      </div>
+    </section>
 
-  <section id="skills">
-    <h2>📖 Skills</h2>
-    <div class="skills">
-      <div class="card">
-        <h3>Programming Languages</h3>
-        <p>Python, Java, JavaScript, HTML, CSS, C++, Rust, Lua, and more.</p>
+    <!-- Services -->
+    <section class="services">
+      <div class="container">
+        <div class="cards">
+          <article class="card">
+            <h3 class="card-title">Minecraft Maps</h3>
+            <p class="card-desc">
+              We create immersive, high-quality Minecraft maps for adventure, minigames, and more.
+            </p>
+            <a href="#" class="btn btn-secondary" aria-label="View work for Minecraft Maps">View Work</a>
+          </article>
+          <article class="card">
+            <h3 class="card-title">Minecraft Setups</h3>
+            <p class="card-desc">
+              Discover a variety of complete plugin setups, including lobbies, crates, and gamemodes, that are easy to install.
+            </p>
+            <a href="#" class="btn btn-secondary" aria-label="View work for Minecraft Setups">View Work</a>
+          </article>
+          <article class="card">
+            <h3 class="card-title">Minecraft Plugins</h3>
+            <p class="card-desc">
+              We offer custom Minecraft plugins to enhance gameplay, offering unique features for any Minecraft server.
+            </p>
+            <a href="#" class="btn btn-secondary" aria-label="View work for Minecraft Plugins">View Work</a>
+          </article>
+        </div>
       </div>
-      <div class="card">
-        <h3>Game Development</h3>
-        <p>Minecraft plugins & mods, Websites/Webstores, server branding, and more.</p>
+    </section>
+
+    <!-- Moving marquee banner -->
+    <section class="marquee" aria-label="Scrolling service banner">
+      <div class="marquee-track">
+        <span class="marquee-item">CUSTOM MINECRAFT PLUGINS</span>
+        <span class="marquee-sep">—</span>
+        <span class="marquee-item">CUSTOM MINECRAFT SETUPS</span>
+        <span class="marquee-sep">—</span>
+        <span class="marquee-item">CUSTOM MINECRAFT BUILDS</span>
+        <span class="marquee-sep">—</span>
+        <span class="marquee-item">CUSTOM MINECRAFT CONFIGS</span>
+        <span class="marquee-sep">—</span>
+
+        <!-- duplicate for seamless loop -->
+        <span class="marquee-item">CUSTOM MINECRAFT PLUGINS</span>
+        <span class="marquee-sep">—</span>
+        <span class="marquee-item">CUSTOM MINECRAFT SETUPS</span>
+        <span class="marquee-sep">—</span>
+        <span class="marquee-item">CUSTOM MINECRAFT BUILDS</span>
+        <span class="marquee-sep">—</span>
+        <span class="marquee-item">CUSTOM MINECRAFT CONFIGS</span>
+        <span class="marquee-sep">—</span>
       </div>
-      <div class="card">
-        <h3>Tools</h3>
-        <p>Visual Studio Code, GitHub, Tebex storefronts, server hosting platforms.</p>
+    </section>
+
+    <!-- About -->
+    <section class="about">
+      <div class="container about-inner">
+        <div class="about-icon" aria-hidden="true">
+          <img src="assets/villager.png" alt="" />
+        </div>
+        <div class="about-content">
+          <h2 class="section-title">Some more about me.</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat
+            tellus magna, quis vestibulum mi pellentesque eu. Duis malesuada bibendum
+            mi id tempor leo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials heading only -->
+    <section class="testimonials">
+      <div class="container">
+        <h2 class="section-title">What people say</h2>
+        <!-- Intentionally empty per your note -->
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+      <div class="container">
+        <h2 class="section-title">Questions you may have</h2>
+        <div class="faq-grid" role="list">
+          <div class="faq-card" role="listitem">
+            <h3 class="faq-title">Lorem ipsum dolor amet</h3>
+            <p class="faq-desc">Consectetur adipiscing elit.</p>
+          </div>
+          <div class="faq-card" role="listitem">
+            <h3 class="faq-title">Sed do eiusmod</h3>
+            <p class="faq-desc">Tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="faq-card" role="listitem">
+            <h3 class="faq-title">Ut enim ad minim veniam</h3>
+            <p class="faq-desc">Quis nostrud exercitation ullamco.</p>
+          </div>
+          <div class="faq-card" role="listitem">
+            <h3 class="faq-title">Duis aute irure dolor</h3>
+            <p class="faq-desc">In reprehenderit in voluptate velit esse cillum.</p>
+          </div>
+          <div class="faq-card" role="listitem">
+            <h3 class="faq-title">Excepteur sint occaecat</h3>
+            <p class="faq-desc">Cupidatat non proident, sunt in culpa.</p>
+          </div>
+          <div class="faq-card" role="listitem">
+            <h3 class="faq-title">Nisi ut aliquip ex ea</h3>
+            <p class="faq-desc">Commodo consequat.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4 class="footer-title">Quick Links</h4>
+        <ul class="footer-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Reviews</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-title">Extra</h4>
+        <ul class="footer-list">
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-title">Community</h4>
+        <ul class="footer-list">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Discord</a></li>
+          <li><a href="#">Reddit</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-title">Villager</h4>
+        <p class="footer-desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...
+        </p>
       </div>
     </div>
-  </section>
-
-  <section id="contact">
-    <h2>📫 Contact</h2>
-    <p>Email: <a href="mailto:youremail@example.com">java@haruki.world</a></p>
-    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/Harukiiidev</a></p>
-    <p>Discord: YourDiscordTag#0000</p>
-  </section>
-
-  <footer>
-    <p>© 2025 Haruki Portfolio | Built with 🖤</p>
+    <div class="container footer-bottom">
+      <p>©2024 Copyright — Villager — All rights reserved</p>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
